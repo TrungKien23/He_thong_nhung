@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"dcbuocvantoc\startup_stm32f103xb.o"
+"dcbuocvantoc\ser_timer.o"
+"dcbuocvantoc\main.o"
+"dcbuocvantoc\stm32f1xx_it.o"
+"dcbuocvantoc\stm32f1xx_hal_msp.o"
+"dcbuocvantoc\stm32f1xx_hal_gpio_ex.o"
+"dcbuocvantoc\stm32f1xx_hal_tim.o"
+"dcbuocvantoc\stm32f1xx_hal_tim_ex.o"
+"dcbuocvantoc\stm32f1xx_hal.o"
+"dcbuocvantoc\stm32f1xx_hal_rcc.o"
+"dcbuocvantoc\stm32f1xx_hal_rcc_ex.o"
+"dcbuocvantoc\stm32f1xx_hal_gpio.o"
+"dcbuocvantoc\stm32f1xx_hal_dma.o"
+"dcbuocvantoc\stm32f1xx_hal_cortex.o"
+"dcbuocvantoc\stm32f1xx_hal_pwr.o"
+"dcbuocvantoc\stm32f1xx_hal_flash.o"
+"dcbuocvantoc\stm32f1xx_hal_flash_ex.o"
+"dcbuocvantoc\stm32f1xx_hal_exti.o"
+"dcbuocvantoc\stm32f1xx_hal_uart.o"
+"dcbuocvantoc\system_stm32f1xx.o"
+--strict --scatter "DCBUOCVANTOC\DCBUOCVANTOC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DCBUOCVANTOC.map" -o DCBUOCVANTOC\DCBUOCVANTOC.axf
